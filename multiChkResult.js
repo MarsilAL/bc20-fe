@@ -27,7 +27,7 @@ function multiChkResult(gameIDi) {
         "</p>";
     },
     error: function (XMLHttpRequest, textStatus, errorThrown) {
-      x.innerHTML = "The other player has not answered yet";
+      x.innerHTML = "The another player has not answered yet";
     },
   });
 }

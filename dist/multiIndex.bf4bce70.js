@@ -11218,7 +11218,8 @@ $ = window.$ = window.jQuery = jquery;
 
 function multiCallEndpoint(gameIDi, playerID, PAnswer) {
   event.preventDefault(); // we will send this to the backend
-  //// gameID & playerID & decision & requestCheck=0
+
+  var x = document.getElementById("resultP"); //// gameID & playerID & decision & requestCheck=0
 
   var apiUrl = "https://vast-wildwood-04775.herokuapp.com/rps/?gameID=" + gameIDi + "&playerID=" + playerID + "&decision=" + PAnswer;
   $.get({
@@ -11226,6 +11227,7 @@ function multiCallEndpoint(gameIDi, playerID, PAnswer) {
     success: function success(data, status) {
       console.log(" call ");
       console.log("Data: " + data + "\nStatus: " + status);
+      x.innerHTML = "The answer has been sent";
     },
     error: function error(XMLHttpRequest, textStatus, errorThrown) {
       alert(textStatus, errorThrown);
@@ -11256,7 +11258,7 @@ function multiChkResult(gameIDi) {
       x.innerHTML = "<p class='winner'>  The Winner is:   " + "   " + obj.Winner + "</p>" + "<p>The First player chose:  " + obj.Spieler1 + "</p>" + "<p>The Second player chose:  " + obj.Spieler2 + "</p>";
     },
     error: function error(XMLHttpRequest, textStatus, errorThrown) {
-      x.innerHTML = "The other player has not answered yet";
+      x.innerHTML = "The another player has not answered yet";
     }
   });
 }
@@ -11316,7 +11318,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59237" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53260" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

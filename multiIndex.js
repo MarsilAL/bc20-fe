@@ -17,6 +17,7 @@ function handelCheckMulti(event) {
 
 $(document).ready(function () {
   console.log("multi");
+
   /// CallEndpoint
   $("#SubmitBtn").click(handelSubmitMulti);
 

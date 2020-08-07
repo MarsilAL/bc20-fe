@@ -6,7 +6,7 @@ function multiCallEndpoint(gameIDi, playerID, PAnswer) {
   event.preventDefault();
 
   // we will send this to the backend
-
+  var x = document.getElementById("resultP");
   //// gameID & playerID & decision & requestCheck=0
 
   const apiUrl =
@@ -21,6 +21,8 @@ function multiCallEndpoint(gameIDi, playerID, PAnswer) {
     success: function (data, status) {
       console.log(" call ");
       console.log("Data: " + data + "\nStatus: " + status);
+      x.innerHTML = "The answer has been sent";
+
     },
     error: function (XMLHttpRequest, textStatus, errorThrown) {
       alert(textStatus, errorThrown);
