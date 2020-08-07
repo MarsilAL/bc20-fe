@@ -1,0 +1,25 @@
+{
+  "name": "bc20-fe",
+  "version": "1.0.0",
+  "description": "Frontend",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "parcel-bundler": "^1.12.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "parcel build index.html --out-dir docs  --public-url .",
+    "test": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarsilAL/bc20-fe.git"
+  },
+  "author": "Alashkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarsilAL/bc20-fe/issues"
+  },
+  "homepage": "https://github.com/MarsilAL/bc20-fe#readme"
+}

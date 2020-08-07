@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10%;
+  padding: 0;
+}
+h {
+  text-align: center;
+}
+
+select {
+  outline: none;
+  position: relative;
+  font-family: Arial;
+}
+.container {
+  display: grid;
+  grid-template-columns: minmax();
+  width: 100%;
+  background-color: rgb(135, 41, 179);
+}
+
+.mci {
+  background-color: rgba(142, 196, 221, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Submit Button! */
+
+.SubmitBtn {
+  margin: 2px;
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: white;
+  color: black;
+  border: 2px solid #2a53d8;
+  outline: none;
+}
+
+.SubmitBtn:hover {
+  background-color: #2a53d8;
+  color: white;
+}
+.SubmitBtn:active {
+  border: -3px;
+  border-bottom-color: rgba(38, 240, 99, 0.747);
+}
+
+.column {
+  float: right;
+
+  padding: 2px;
+  height: 200px;
+  text-align: center;
+}
+
+.answerDiv {
+  position: relative;
+  align-items: center;
+  text-align: center;
+}
+.select-wrapper {
+  width: 200px;
+  position: relative;
+  align-items: center;
+}
+
+.select-wrapper::before {
+  font-family: fontello;
+  content: "\f107";
+  font-size: 20px;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  color: #fff;
+  pointer-events: none;
+}
+
+select {
+  width: 100%;
+  height: 40px;
+  -moz-padding-start: calc(10px - 3px);
+  padding-left: 10px;
+  background-color: rgb(204, 167, 207);
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
+option {
+  color: #666;
+}
+select:focus::-ms-value {
+  background-color: transparent;
+}
+
+
+/*# sourceMappingURL=/singleStyle.a2c03482.css.map */
