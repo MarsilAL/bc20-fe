@@ -14,7 +14,6 @@ select {
   outline: none;
   position: relative;
   font-family: Arial;
-  
 }
 .container {
   display: grid;
@@ -79,4 +78,8 @@ select {
   padding: 2px;
   height: 200px;
   text-align: center;
+}
+.winner {
+  color: rgb(255, 255, 255);
+  text-shadow: 4px 4px #0ebd08;
 }

@@ -11253,7 +11253,7 @@ function multiChkResult(gameIDi) {
     url: apiUrl,
     success: function success(data) {
       var obj = JSON.parse(data);
-      x.innerHTML = "  The Winner is:   " + "   " + obj.Winner;
+      x.innerHTML = "<p class='winner'>  The Winner is:   " + "   " + obj.Winner + "</p>" + "<p>The First player chose:  " + obj.Spieler1 + "</p>" + "<p>The Second player chose:  " + obj.Spieler2 + "</p>";
     },
     error: function error(XMLHttpRequest, textStatus, errorThrown) {
       x.innerHTML = "The other player has not answered yet";
@@ -11282,7 +11282,8 @@ function handelCheckMulti(event) {
 }
 
 $(document).ready(function () {
-  /// CallEndpoint
+  console.log("multi"); /// CallEndpoint
+
   $("#SubmitBtn").click(handelSubmitMulti); /// chk
 
   $("#chkBtn").click(handelCheckMulti);
@@ -11315,7 +11316,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53530" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59237" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

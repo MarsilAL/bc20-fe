@@ -14,7 +14,17 @@ function multiChkResult(gameIDi) {
     url: apiUrl,
     success: function (data) {
       var obj = JSON.parse(data);
-      x.innerHTML = "  The Winner is:   " + "   " + obj.Winner;
+      x.innerHTML =
+        "<p class='winner'>  The Winner is:   " +
+        "   " +
+        obj.Winner +
+        "</p>" +
+        "<p>The First player chose:  " +
+        obj.Spieler1 +
+        "</p>" +
+        "<p>The Second player chose:  " +
+        obj.Spieler2 +
+        "</p>";
     },
     error: function (XMLHttpRequest, textStatus, errorThrown) {
       x.innerHTML = "The other player has not answered yet";
