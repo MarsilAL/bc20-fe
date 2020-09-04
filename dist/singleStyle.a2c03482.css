@@ -3,7 +3,7 @@
 }
 
 body {
-  margin: 10%;
+  margin: 10px;
   padding: 0;
 }
 h {
@@ -17,38 +17,38 @@ select {
 }
 .container {
   display: grid;
-  grid-template-columns: minmax();
   width: 100%;
-  background-color: rgb(135, 41, 179);
+  
 }
-
 .mci {
-  background-color: rgba(142, 196, 221, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
   font-size: 30px;
   text-align: center;
+  background-color: rgb(113, 152, 204);
 }
 
 /* Submit Button! */
 
 .SubmitBtn {
-  margin: 2px;
-  padding: 5px;
-  box-sizing: border-box;
-  background-color: white;
-  color: black;
-  border: 2px solid #2a53d8;
-  outline: none;
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  border-radius: 5px;
+  margin:5px;
+}
 }
 
 .SubmitBtn:hover {
-  background-color: #2a53d8;
-  color: white;
-}
-.SubmitBtn:active {
-  border: -3px;
-  border-bottom-color: rgba(38, 240, 99, 0.747);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+  0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-color: #3c923f; /* Green */
+
 }
 
 .column {
@@ -86,7 +86,7 @@ select {
   height: 40px;
   -moz-padding-start: calc(10px - 3px);
   padding-left: 10px;
-  background-color: rgb(204, 167, 207);
+  background-color: rgb(149, 149, 149);
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -101,6 +101,36 @@ option {
 select:focus::-ms-value {
   background-color: transparent;
 }
+.header{
+  text-align: center;
+border: none; 
+font-size: 35px;
+color: rgb(29, 29, 144);
+}
+.btnPlayer:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    background-color: #3c923f; /* Green */
+
+}
+.btnPlayer {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+.btnCon{
+  display: grid;
+  margin: 50px;
+}
+.returnButton{
+display:flex;}
 
 
 /*# sourceMappingURL=/singleStyle.a2c03482.css.map */

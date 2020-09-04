@@ -2,7 +2,50 @@
   box-sizing: border-box;
 }
 
-.header {
-  border: 1px solid red;
-  padding: 15px;
-}
+
+.header{
+  text-align: center;
+  border: none; 
+  font-size: 35px;
+  color: rgb(29, 29, 144);
+  }
+    .btnPlayer1:hover {
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+        0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        background-color: #3c923f; /* Green */
+  
+    }
+    .btnPlayer1 {
+      background-color: #4caf50; /* Green */
+      border: none;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 30px;
+      border-radius: 5px;
+      margin:5px;
+    }
+    .btnPlayer2:hover {
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+        0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        background-color: #3c923f; /* Green */
+  
+    }
+    .btnPlayer2 {
+      background-color: #4caf50; /* Green */
+      border: none;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 30px;
+      border-radius: 5px;
+      margin:5px;
+    }
+    .btnCon{
+      display: grid;
+      margin: 50px;
+    }

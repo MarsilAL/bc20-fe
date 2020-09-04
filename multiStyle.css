@@ -1,85 +1,114 @@
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
-
+.header {
+	text-align: center;
+	border: none;
+	font-size: 35px;
+	color: rgb(29, 29, 144);
+}
 body {
-  margin: 10%;
-  padding: 0;
+	margin: 10px;
+	padding: 0;
 }
 h {
-  text-align: center;
+	text-align: center;
 }
 
 select {
-  outline: none;
-  position: relative;
-  font-family: Arial;
+	outline: none;
+	position: relative;
+	font-family: Arial;
 }
 .container {
-  display: grid;
-  grid-template-columns: minmax();
-  width: 100%;
-  background-color: rgb(135, 41, 179);
+	display: grid;
+	grid-template-columns: minmax();
+	width: 100%;
 }
 
 .mci {
-  background-color: rgba(142, 196, 221, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
   font-size: 30px;
   text-align: center;
+  background-color: rgb(113, 152, 204);
 }
 
 /* Submit Button! */
 
 .SubmitBtn {
-  margin: 2px;
-  padding: 5px;
-  box-sizing: border-box;
-  background-color: white;
-  color: black;
-  border: 2px solid #2a53d8;
-  outline: none;
+	margin: 2px;
+	padding: 5px;
+	box-sizing: border-box;
+	background-color: white;
+	color: black;
+	border: 2px solid #2a53d8;
+	outline: none;
 }
 
 .SubmitBtn:hover {
-  background-color: #2a53d8;
-  color: white;
+	background-color: #2a53d8;
+	color: white;
 }
 .SubmitBtn:active {
-  border: -3px;
-  border-bottom-color: rgba(38, 240, 99, 0.747);
+	border: -3px;
+	border-bottom-color: rgba(38, 240, 99, 0.747);
 }
 
 /* Check Button! */
 
 .chkBtn {
-  margin: 2px;
-  padding: 5px;
-  box-sizing: border-box;
-  background-color: white;
-  color: black;
-  border: 2px solid #d8be2a;
-  outline: none;
+	margin: 2px;
+	padding: 5px;
+	box-sizing: border-box;
+	background-color: white;
+	color: black;
+	border: 2px solid #d8be2a;
+	outline: none;
 }
 
 .chkBtn:hover {
-  background-color: #d8be2a;
-  color: white;
+	background-color: #d8be2a;
+	color: white;
 }
 .chkBtn:active {
-  border: -3px;
-  border-bottom-color: rgba(240, 38, 179, 0.747);
+	border: -3px;
+	border-bottom-color: rgba(240, 38, 179, 0.747);
 }
 
 .column {
-  float: right;
+	float: right;
 
-  padding: 2px;
-  height: 200px;
-  text-align: center;
+	padding: 2px;
+	height: 200px;
+	text-align: center;
 }
 .winner {
-  color: rgb(255, 255, 255);
-  text-shadow: 4px 4px #0ebd08;
+	color: rgb(255, 255, 255);
+	text-shadow: 4px 4px #0ebd08;
+}
+.btnCon {
+  display: grid;
+  margin:50px;
+}
+.returnButton {
+  display: flex;
+  margin-top: 50px;
+}
+.btnPlayer:hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+		0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	background-color: #3c923f; /* Green */
+}
+.btnPlayer {
+	background-color: #4caf50; /* Green */
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 30px;
+	border-radius: 5px;
+	margin: 5px;
 }

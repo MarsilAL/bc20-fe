@@ -10,7 +10,7 @@
   "devDependencies": {},
   "scripts": {
     "build": "parcel build index.html --out-dir docs  --public-url .",
-    "test": "parcel index.html"
+    "test": "parcel index.html multi.html single.html player1.html player2.html"
   },
   "repository": {
     "type": "git",
