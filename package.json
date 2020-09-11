@@ -7,7 +7,9 @@
     "jquery": "^3.5.1",
     "parcel-bundler": "^1.12.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  },
   "scripts": {
     "build": "parcel build player1.html multi.html single.html player2.html index.html --out-dir docs  --public-url .",
     "test": "parcel index.html"
