@@ -12,7 +12,9 @@ function handelSubmitMulti(event) {
 /// Check the results
 function handelCheckMulti(event) {
   const gameIDi = $("#gameIDi").val();
-  multiChkResult(gameIDi);
+  const playerID = $("#playerID").val();
+
+  multiChkResult(gameIDi, playerID);
 }
 
 $(document).ready(function () {

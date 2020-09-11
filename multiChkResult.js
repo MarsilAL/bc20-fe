@@ -2,13 +2,15 @@ const jquery = require("jquery");
 //
 $ = window.$ = window.jQuery = jquery;
 
-function multiChkResult(gameIDi) {
+function multiChkResult(gameIDi, playerID) {
   // we will send this to the backend
 
   var x = document.getElementById("resultP");
   const apiUrl =
     "https://vast-wildwood-04775.herokuapp.com/rps/?gameID=" +
     gameIDi +
+    "&playerID=" +
+    playerID +
     "&requestCheck=1";
   $.get({
     url: apiUrl,
